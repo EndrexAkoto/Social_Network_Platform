@@ -1,0 +1,72 @@
+/* src/components/LandingPage.css */
+
+.landing-page {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #28a745;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-item {
+  margin: 20px 0;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
