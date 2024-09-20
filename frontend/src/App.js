@@ -1,18 +1,16 @@
-// src/App.js
-
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Register from './components/Register'
+import LandingPage from './components/LandingPage'
 import Login from './components/Login'
 import Notification from './components/Notification'
-import axios from 'axios' // Import axios for API requests
+import axios from 'axios'
 
 function App() {
   const [notifications, setNotifications] = useState([])
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    // Fetch notifications from the backend
     axios.get('/api/notifications')
       .then(response => {
         try {
@@ -33,7 +31,7 @@ function App() {
       <div className="App">
         <Notification notifications={notifications} error={error} />
         <Routes>
-          <Route path="/" element={<Register />} /> {/* Default route */}
+          <Route path="/" element={<LandingPage />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Routes>

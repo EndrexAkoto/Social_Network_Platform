@@ -1,5 +1,4 @@
 // src/components/LandingPage.js
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './LandingPage.css' // Ensure to create a CSS file for styling
@@ -31,7 +30,11 @@ const LandingPage = () => {
           <h3>User Profiles</h3>
           <p>Create and customize your own profile.</p>
         </div>
-        <div className="feature-item">
+        
+      </section>
+      <footer className="footer">
+        <div className="contact">
+          <div className="feature-item">
           <h3>Real-time Updates</h3>
           <p>Stay up-to-date with live notifications and updates.</p>
         </div>
@@ -39,16 +42,13 @@ const LandingPage = () => {
           <h3>Friend Requests</h3>
           <p>Connect with friends and manage your network.</p>
         </div>
-      </section>
-      <footer className="footer">
-        <p>&copy; 2024 MySocialApp. All rights reserved.</p>
+          <p>Contact us: <a href="mailto:support@mysocialapp.com">support@mysocialapp.com</a></p>
+        </div>
         <nav className="footer-nav">
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms of Service</Link>
         </nav>
-        <div className="contact">
-          <p>Contact us: <a href="mailto:support@mysocialapp.com">support@mysocialapp.com</a></p>
-        </div>
+        <p>&copy; 2024 MySocialApp. All rights reserved.</p>
       </footer>
     </div>
   )
